@@ -284,8 +284,8 @@ iframe {
         width: max-content; 
         position: fixed; 
         background-color: #202020;  
-        left: 0;
-        margin-top: -150px;
+        left: -10px;
+        top: -150px;
         box-shadow: none; 
     }
 
