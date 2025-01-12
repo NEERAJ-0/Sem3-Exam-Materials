@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>SEM III - Exam Materials</title>
+</head>
+<body background="assets/img/banner.jpeg">
+    <!--Header-->
+    <header>
+        <img src="assets/img/logo2.png" alt="Logo">
+    </header>
+    <i class="fa-solid fa-bars" id="sidebar-toggle"></i>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <!-- <a href="subjects.html"><i class="fa-solid fa-arrow-left"></i></a> -->
+            <a href="#" class="nav-link" data-target="se-content">301 - SE</a>
+            <a href="#" class="nav-link" data-target="cg-content">302 - CG</a>
+            <a href="#" class="nav-link" data-target="wt-content">303 - WT</a>
+            <a href="#" class="nav-link" data-target="sp-content">304C - SP</a>
+            <a href="#" class="nav-link" data-target="mad-content">305C - MAD</a>
+            <a href="#" class="nav-link" data-target="dm-content">306 - DM</a>
+        </nav>
+
+        <!-- Content Section -->
+        <section class="content-section1" id="content-section">
+            <!-- Default content, this can be empty or have a welcome message -->
+            <h3>Please select a subject to view the materials.</h3>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-line">Copyright &copy; 2025 || All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to change the content based on the selected link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default anchor click behavior
+
+                // Get the target content id
+                const targetId = this.getAttribute('data-target');
+                
+                // Get the section element
+                const contentSection = document.getElementById('content-section');
+
+                // Change the content based on the targetId
+                if (targetId === 'se-content') {
+                    contentSection.innerHTML = `
+                        <h1>MCA 301 - Software Engineering</h1>
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>301-Software Engineering Unit-1</td>
+                                    <td><a href="examfiles/301-SE/301 Software Engineering Unit-1.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>301-Software Engineering Unit-2</td>
+                                    <td><a href="examfiles/301-SE/301 Software Engineering Unit-2.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>301-Software Engineering Unit-3</td>
+                                    <td><a href="examfiles/301-SE/301 Software Engineering Unit-3.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>301-Software Engineering Unit-4</td>
+                                    <td><a href="examfiles/301-SE/301 Software Engineering Unit-4.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>301-Software Engineering Unit-5</td>
+                                    <td><a href="examfiles/301-SE/301 Software Engineering Unit-5.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    `;
+                } else if (targetId === 'cg-content') {
+                    contentSection.innerHTML = `
+                        <h1>MCA 302 - Computer Graphics</h1>
+                        <table class="styled-table">
+                            <thead>
+                                <tr colspan="2">
+                                    <th>File Name</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>302-Computer Graphics Unit 1-5</td>
+                                    <td><a href="examfiles/302-CG/302 Computer Graphics Unit 1-5.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Computer Graphics Notes</td>
+                                    <td><a href="examfiles/302-CG/Computer Graphics Notes.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    `;
+                }else if (targetId === 'wt-content') {
+                    contentSection.innerHTML = `
+                        <h1>MCA 303 - Web Technologies</h1>
+                        <table class="styled-table">
+                            <thead>
+                                <tr colspan="2">
+                                    <th>File Name</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>303 Web Technologies unit-1</td>
+                                    <td><a href="examfiles/303-WT/303 Web Technologies unit-1.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>303 Web Technologies unit-2</td>
+                                    <td><a href="examfiles/303-WT/303 Web Technologies unit-2.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>303 Web Technologies unit-3</td>
+                                    <td><a href="examfiles/303-WT/303 Web Technologies unit-3.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>303 Web Technologies unit-4</td>
+                                    <td><a href="examfiles/303-WT/303 Web Technologies unit-4.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>303 Web Technologies unit-5</td>
+                                    <td><a href="examfiles/303-WT/303 Web Technologies unit-5.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>303 Web Technologies QS</td>
+                                    <td><a href="examfiles/303-WT/303 Web Technologies QS.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    `;
+                }else if (targetId === 'sp-content') {
+                    contentSection.innerHTML = `
+                        <h1>MCA 304C - System Programming </h1>
+                        <table class="styled-table">
+                            <thead>
+                                <tr colspan="2">
+                                    <th>File Name</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>304C System Programming Unit-1</td>
+                                    <td><a href="examfiles/304C-SP/304C System Programming Unit-1.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>304C System Programming Unit-2</td>
+                                    <td><a href="examfiles/304C-SP/304C System Programming Unit-2.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>304C System Programming Unit-3</td>
+                                    <td><a href="examfiles/304C-SP/304C System Programming Unit-3.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>304C System Programming Unit-4</td>
+                                    <td><a href="examfiles/304C-SP/304C System Programming Unit-4.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>304C System Programming Unit-5</td>
+                                    <td><a href="examfiles/304C-SP/304C System Programming Unit-5.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>ARCHITECTURES NOTES UNIT-1</td>
+                                    <td><a href="examfiles/304C-SP/ARCHITECTURES NOTES UNIT-1.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>Unit-4 SP diagram</td>
+                                    <td><a href="examfiles/304C-SP/Unit-4 SP diagram.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>Unit-4 SP Drivers concept</td>
+                                    <td><a href="examfiles/304C-SP/Unit-4 SP Drivers concept.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>Unit-5 Linux and macro processor</td>
+                                    <td><a href="examfiles/304C-SP/Unit-5 Linux and macro processor.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>Unit-5 Linux commands</td>
+                                    <td><a href="examfiles/304C-SP/Unit-5 Linux commands.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                             
+                                <tr>
+                                    <td>SP Architectures</td>
+                                    <td><a href="examfiles/304C-SP/SP Architectures.xlsx" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                            </tbody>
+                        </table>
+                    `;
+                }else if (targetId === 'mad-content') {
+                    contentSection.innerHTML = `
+                        <h1>MCA 305C - Mobile Application Development </h1>
+                        <table class="styled-table">
+                            <thead>
+                                <tr colspan="2">
+                                    <th>File Name</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>305C Mobile Application Development Unit 1-5</td>
+                                    <td><a href="examfiles/305C-MAD/305C Mobile Application Development Unit 1-5.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>305C Mobile Application Development Unit-5</td>
+                                    <td><a href="examfiles/305C-MAD/305C Mobile Application Development Unit-5.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                            </tbody>
+                        </table>
+                    `;
+                }
+                else if (targetId === 'dm-content') {
+                    contentSection.innerHTML = `
+                        <h1>MCA 306 - Digital Marketing</h1>
+                        <table class="styled-table">
+                            <thead>
+                                <tr colspan="2">
+                                    <th>File Name</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>306 Digital Marketing Unit 1-5</td>
+                                    <td><a href="examfiles/306-DM/306 Digital Marketing Unit 1-5.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                                <tr>
+                                    <td>306 Digital Marketing Unit-3</td>
+                                    <td><a href="examfiles/306-DM/306 Digital Marketing Unit-3.pdf" download><i class="fa-solid fa-download"></i></a></td>
+                                </tr>                               
+                            </tbody>
+                        </table>
+                    `;
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContainer = document.querySelector('.main-container');
+
+        // Toggle sidebar visibility
+        sidebarToggle.addEventListener('click', function () {
+            sidebar.classList.toggle('open');
+            sidebarToggle.classList.toggle('open');
+        });
+
+        // Hide sidebar when clicking outside of it
+        document.addEventListener('click', function (e) {
+            if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target)) {
+                sidebar.classList.remove('open');
+                sidebarToggle.classList.remove('open');
+            }
+        });
+
+        // Hide sidebar when clicking on a subject
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                if (sidebar.classList.contains('open')) {
+                    sidebar.classList.remove('open');
+                    sidebarToggle.classList.remove('open');
+                }
+            });
+        });
+    });
+
+
+    </script>
+</body>
+</html>
