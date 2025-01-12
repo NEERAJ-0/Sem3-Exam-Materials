@@ -128,16 +128,11 @@ footer {
 /* Sidebar Styles */
 .sidebar {
     width: max-content;
-    /* border-bottom: 1px solid #575757;
-    border-radius: 8px;
-    background-color: #121212a0; */
     padding: 15px;
-    /* box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); */
     position: fixed;
     top: 100px;
     left: 10px; 
     overflow-y: auto;
-    /* height: calc(100vh - 300px);  */
 }
 
 .sidebar a {
@@ -260,89 +255,121 @@ iframe {
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
     header h1 {
-        font-size: 20px;
+        font-size: 20px; /* Adjusted for smaller screens */
+    }
+
+    header img {
+        height: 50px; /* Logo size adjustment */
     }
 
     header h2 {
         font-size: 16px;
     }
 
-    header h3 {
-        font-size: 14px;
-    }
-
     .content-section {
         flex-direction: column;
+        align-items: center; /* Center content on smaller screens */
         height: auto;
+        margin-top: 20px;
     }
 
     .tab {
-        width: 100%;
-        margin: 0;
+        width: 80%; /* Tabs occupy most of the screen width */
+        margin: 10px 0;
         line-height: 50px;
+        font-size: 18px; /* Adjusted font size for readability */
     }
 
     .sidebar {
-        width:fit-content;
-        position: relative;
-        height: auto;
-        top: 0;
-        margin-bottom: 20px;
+        width: 100%; /* Sidebar spans the full width of the screen */
+        position: static; /* Sidebar stays within the flow of the content */
+        background-color: #121212; /* Visible background for contrast */
+        margin-bottom: 20px; /* Add spacing below the sidebar */
+        box-shadow: none; /* Simplify design for smaller screens */
     }
 
     .sidebar a {
-        text-align: center;
-        padding: 15px;
+        text-align: center; /* Center-align sidebar links */
+        font-size: 16px; /* Adjust font size for readability */
+        padding: 12px;
     }
 
     .main-container {
         flex-direction: column;
         height: auto;
-    }
-
-    .content-section1 {
-        margin-left: 0;
-        margin-top: 0;
+        margin: 0;
         padding: 10px;
     }
 
+    .content-section1 {
+        margin: 0;
+        padding: 10px;
+        height: auto; /* Allow content to grow naturally */
+    }
+
     .styled-table {
-        width: 80%;
+        width: 90%; /* Adjust table width to fit smaller screens */
         margin: 10px auto;
     }
 
     .styled-table th,
     .styled-table td {
-        font-size: 14px;
+        font-size: 14px; /* Smaller font for compact tables */
         padding: 8px;
     }
 
     iframe {
-        height: auto;
+        height: auto; /* Allow iframe to adjust to content */
     }
 
     footer {
-        position: fixed;
-        bottom: 0;
+        position: relative;
         margin-top: 20px;
+    }
+
+    /* Sidebar toggle */
+    #sidebar-toggle {
+        display: block;
+        font-size: 24px;
+        color: #ffffff;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 2000;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar.open {
+        display: block;
+    }
+
+    #sidebar-toggle.open::before {
+        content: "\f00d"; /* Font Awesome close icon */
+    }
+
+    #sidebar-toggle::before {
+        content: "\f0c9"; /* Font Awesome menu icon */
     }
 }
 
 @media only screen and (max-width: 480px) {
     header h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    header h2 {
-        font-size: 16px;
-    }
-
-    header h3 {
-        font-size: 14px;
+    header img {
+        height: 40px;
     }
 
     .tab {
+        width: 100%; /* Full width for mobile screens */
+        margin: 10px 0;
         line-height: 40px;
+        font-size: 16px;
     }
 
     .styled-table th,
@@ -355,58 +382,11 @@ iframe {
         font-size: 14px;
     }
 
+    #sidebar-toggle {
+        font-size: 20px;
+    }
+
     .fa-solid {
         font-size: 16px;
     }
 }
-
-/* Sidebar Toggle Icon */
-#sidebar-toggle {
-    display: none; /* Hide by default */
-}
-
-/* Show the sidebar toggle icon on mobile screens */
-@media only screen and (max-width: 768px) {
-    #sidebar-toggle {
-        display: block;
-        font-size: 24px;
-        color: #ffffff;
-        cursor: pointer;
-        position: relative;
-        
-    }
-
-    .sidebar {
-        display: none;
-        position: absolute;
-        top:inherit; /* Adjust top positioning */
-        left: 0;
-        width: fit-content;
-        /* height: calc(100vh - 60px);
-        background-color: #ffe5b4; */
-    }
-
-    .sidebar.open {
-        display: block;
-    }
-
-    .main-container {
-        margin-left: 0;
-    }
-    /* Add styles for the cross icon */
-    #sidebar-toggle.open {
-        font-family: 'Font Awesome 5 Free'; /* Ensure Font Awesome is included */
-        font-weight: 900; /* Bold style for Font Awesome icon */
-    }
-
-    /* Hide the default menu icon when sidebar is open */
-    #sidebar-toggle.open::before {
-        content: "\f00d"; /* Font Awesome cross icon code */
-    }
-
-    /* Show the default menu icon when sidebar is closed */
-    #sidebar-toggle::before {
-        content: "\f0c9"; /* Font Awesome menu icon code */
-    }
-}
-
