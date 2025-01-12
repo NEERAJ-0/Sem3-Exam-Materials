@@ -285,7 +285,7 @@ iframe {
         position: fixed; 
         background-color: #202020;  
         left: -10px;
-        top: -150px;
+        top: 60px;
         box-shadow: none; 
     }
 
@@ -331,7 +331,7 @@ iframe {
     /* Sidebar toggle */
     #sidebar-toggle {
         display: block;
-        font-size: 30px;
+        font-size: 24px;
         color: #ffffff;
         cursor: pointer;
         position: fixed;
@@ -388,6 +388,6 @@ iframe {
     }
 
     .fa-solid {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
