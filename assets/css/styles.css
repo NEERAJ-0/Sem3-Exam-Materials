@@ -281,15 +281,17 @@ iframe {
     }
 
     .sidebar {
-        width: 100%; 
+        width: max-content; 
         position: relative; 
-        background-color: #121212; 
+        background-color: #202020; 
         margin-bottom: 20px; 
+        margin-left: 0;
+        margin-top: -50px;
         box-shadow: none; 
     }
 
     .sidebar a {
-        text-align: center; 
+        text-align: left; 
         font-size: 16px; 
         padding: 12px;
     }
@@ -323,19 +325,19 @@ iframe {
     }
 
     footer {
-        position: relative;
+        position: fixed;
         margin-top: 20px;
     }
 
     /* Sidebar toggle */
     #sidebar-toggle {
         display: block;
-        font-size: 24px;
+        font-size: 28px;
         color: #ffffff;
         cursor: pointer;
         position: fixed;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 20px;
         z-index: 2000;
     }
 
