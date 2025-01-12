@@ -1,0 +1,412 @@
+/* Body Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover; 
+    background-repeat: repeat;
+    background-position: center; 
+    margin: 0; 
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    /* overflow: hidden;  */
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+    position: absolute; 
+    top: 0;  
+    z-index: 1000;
+}
+
+
+header img {
+    height: 75px;
+    margin: 0 auto;
+}
+
+h2{
+    color: #ffffff;
+    text-align: center;
+}
+h2 .exam-material {
+    color: #4a80ff; 
+}
+
+/* Section Styles */
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 5px auto;
+    margin-top: -50px;
+}
+
+.tab {
+    width: 200px;
+    height: 150px;
+    background-color: #ffffff;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 150px; /* Vertically center text */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.tab a {
+    display: block; /* Make the <a> tag block-level */
+    height: 100%;
+    width: 100%;
+    color: #303030;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 150px; /* Vertically center text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover Effect for Tabs */
+.tab:hover {
+    background-color: #121212e4;
+    cursor: pointer;
+}
+.tab a:hover{
+    color: #ffffff;
+}
+
+section h1 {
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+}
+
+section h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    color: #fff; 
+    text-align: center;
+    padding: 10px;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    z-index: 1000; 
+}
+
+.footer-line {
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 2px 0;
+    line-height: 1.2;
+}
+
+
+.fa-solid {
+    text-align: left;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    height: calc(100vh - 180px); 
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: max-content;
+    /* border-bottom: 1px solid #575757;
+    border-radius: 8px;
+    background-color: #121212a0; */
+    padding: 15px;
+    /* box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); */
+    position: fixed;
+    top: 100px;
+    left: 10px; 
+    overflow-y: auto;
+    /* height: calc(100vh - 300px);  */
+}
+
+.sidebar a {
+    display: block;
+    margin: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #343434e3;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Content Section Styles */
+.content-section1 {
+    flex: 1;
+    margin-top: -10px;
+    padding: 20px;
+    overflow-y: auto; 
+    height: calc(100vh - 195px);
+    scrollbar-width:auto; 
+    scrollbar-color: rgba(0, 0, 0, 0.654) rgba(137, 137, 137, 0.275);
+}
+
+.content-section1::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.content-section1::-webkit-scrollbar-thumb {
+    background-color: rgba(30, 30, 30, 0.607); 
+    border-radius: 4px;
+}
+
+.content-section1::-webkit-scrollbar-track {
+    background-color: rgba(220, 220, 220, 0.5); 
+    border-radius: 4px; 
+}
+
+
+.content-section2{
+    margin-top: -80px;
+}
+.Qstitle {
+    display: flex;
+    align-items: center; 
+    gap: 12px; 
+}
+.Qstitle a {
+    text-decoration: none;
+    font-size: 22px; 
+    color: #ffffff; 
+}
+.Qstitle h1 {
+    margin: 0; 
+    font-size: 22px; 
+    color: #ffffff; 
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Table Styles */
+.styled-table {
+    width: max-content; 
+    margin: 20px auto; 
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color:#00055b;
+    vertical-align: middle; 
+}
+
+.styled-table td:first-child {
+    text-align: left; 
+}
+
+.styled-table td:last-child {
+    text-align: center; 
+}
+
+.styled-table a {
+    text-decoration: none;
+}
+
+.styled-table th {
+    background-color: #f2f2f2; 
+    font-weight: bold;
+    color: #003544; 
+    text-align: left;
+}
+
+.styled-table i {
+    color: #000e5b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.styled-table i:hover {
+    color: #768fff;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    header h3 {
+        font-size: 16px;
+    }
+
+    .content-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tab {
+        width: 50%;
+        margin: 10px 0;
+        line-height: 50px;
+    }
+
+    .sidebar {
+        width:fit-content;
+        position: relative;
+        height: auto;
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    .sidebar a {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content-section1 {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .styled-table {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    iframe {
+        height: auto;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    header h3 {
+        font-size: 14px;
+    }
+
+    .tab {
+        line-height: 40px;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .sidebar a {
+        font-size: 14px;
+    }
+
+    .fa-solid {
+        font-size: 16px;
+    }
+}
+
+/* Sidebar Toggle Icon */
+#sidebar-toggle {
+    display: none; /* Hide by default */
+}
+
+/* Show the sidebar toggle icon on mobile screens */
+@media only screen and (max-width: 768px) {
+    #sidebar-toggle {
+        display: block;
+        font-size: 24px;
+        color: #ffffff;
+        cursor: pointer;
+        position: relative;
+        
+    }
+
+    .sidebar {
+        display: none;
+        position: absolute;
+        top:inherit; /* Adjust top positioning */
+        left: 0;
+        width: fit-content;
+        /* height: calc(100vh - 60px);
+        background-color: #ffe5b4; */
+    }
+
+    .sidebar.open {
+        display: block;
+    }
+
+    .main-container {
+        margin-left: 0;
+    }
+    /* Add styles for the cross icon */
+    #sidebar-toggle.open {
+        font-family: 'Font Awesome 5 Free'; /* Ensure Font Awesome is included */
+        font-weight: 900; /* Bold style for Font Awesome icon */
+    }
+
+    /* Hide the default menu icon when sidebar is open */
+    #sidebar-toggle.open::before {
+        content: "\f00d"; /* Font Awesome cross icon code */
+    }
+
+    /* Show the default menu icon when sidebar is closed */
+    #sidebar-toggle::before {
+        content: "\f0c9"; /* Font Awesome menu icon code */
+    }
+}
+
