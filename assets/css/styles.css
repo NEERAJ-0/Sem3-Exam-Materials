@@ -282,11 +282,10 @@ iframe {
 
     .sidebar {
         width: max-content; 
-        position: relative; 
-        background-color: #202020; 
-        margin-bottom: 20px; 
-        margin-left: 0;
-        margin-top: -50px;
+        position: fixed; 
+        background-color: #202020;  
+        left: 0;
+        margin-top: -150px;
         box-shadow: none; 
     }
 
@@ -332,7 +331,7 @@ iframe {
     /* Sidebar toggle */
     #sidebar-toggle {
         display: block;
-        font-size: 28px;
+        font-size: 30px;
         color: #ffffff;
         cursor: pointer;
         position: fixed;
