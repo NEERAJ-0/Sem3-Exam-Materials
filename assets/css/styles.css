@@ -268,29 +268,29 @@ iframe {
 
     .content-section {
         flex-direction: column;
-        align-items: center; /* Center content on smaller screens */
+        align-items: center; 
         height: auto;
         margin-top: 20px;
     }
 
     .tab {
-        width: 80%; /* Tabs occupy most of the screen width */
+        width: 80%;
         margin: 10px 0;
         line-height: 50px;
-        font-size: 18px; /* Adjusted font size for readability */
+        font-size: 18px; 
     }
 
     .sidebar {
-        width: 100%; /* Sidebar spans the full width of the screen */
-        position: static; /* Sidebar stays within the flow of the content */
-        background-color: #121212; /* Visible background for contrast */
-        margin-bottom: 20px; /* Add spacing below the sidebar */
-        box-shadow: none; /* Simplify design for smaller screens */
+        width: 100%; 
+        position: relative; 
+        background-color: #121212; 
+        margin-bottom: 20px; 
+        box-shadow: none; 
     }
 
     .sidebar a {
-        text-align: center; /* Center-align sidebar links */
-        font-size: 16px; /* Adjust font size for readability */
+        text-align: center; 
+        font-size: 16px; 
         padding: 12px;
     }
 
@@ -304,22 +304,22 @@ iframe {
     .content-section1 {
         margin: 0;
         padding: 10px;
-        height: auto; /* Allow content to grow naturally */
+        height: auto; 
     }
 
     .styled-table {
-        width: 90%; /* Adjust table width to fit smaller screens */
+        width: 90%; 
         margin: 10px auto;
     }
 
     .styled-table th,
     .styled-table td {
-        font-size: 14px; /* Smaller font for compact tables */
+        font-size: 14px; 
         padding: 8px;
     }
 
     iframe {
-        height: auto; /* Allow iframe to adjust to content */
+        height: auto;   
     }
 
     footer {
@@ -348,11 +348,11 @@ iframe {
     }
 
     #sidebar-toggle.open::before {
-        content: "\f00d"; /* Font Awesome close icon */
+        content: "\f00d"; 
     }
 
     #sidebar-toggle::before {
-        content: "\f0c9"; /* Font Awesome menu icon */
+        content: "\f0c9"; 
     }
 }
 
@@ -366,7 +366,7 @@ iframe {
     }
 
     .tab {
-        width: 100%; /* Full width for mobile screens */
+        width: 100%; 
         margin: 10px 0;
         line-height: 40px;
         font-size: 16px;
