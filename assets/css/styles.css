@@ -358,7 +358,7 @@ iframe {
 }
 
 #sidebar-toggle {
-    display: none; 
+        display: none; /* Hide the bar */
 }
 
 @media only screen and (max-width: 480px) {
