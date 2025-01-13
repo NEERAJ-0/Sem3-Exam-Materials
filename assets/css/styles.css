@@ -354,7 +354,11 @@ iframe {
 
     #sidebar-toggle::before {
         content: "\f0c9"; 
-    }
+    }  
+}
+
+#sidebar-toggle {
+    display: none; 
 }
 
 @media only screen and (max-width: 480px) {
