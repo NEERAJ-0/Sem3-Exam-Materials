@@ -252,6 +252,11 @@ iframe {
     color: #768fff;
 }
 
+
+#sidebar-toggle {
+    display: none; 
+} 
+
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
     header h1 {
@@ -354,12 +359,10 @@ iframe {
 
     #sidebar-toggle::before {
         content: "\f0c9"; 
-    }  
+    } 
+   
 }
 
-#sidebar-toggle {
-        display: none; /* Hide the bar */
-}
 
 @media only screen and (max-width: 480px) {
     header h1 {
